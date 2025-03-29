@@ -1,0 +1,183 @@
+{
+	"home": {
+		"title": "Hello and Welcome",
+		"description": "I’m Crușoveanu Ioan, a web developer passionate for programming and its limitless possibilities. Whether I’m solving problems or creating intuitive user interfaces, I’m driven by curiosity and a desire to grow. Take a look around to get to know me and my work better.",
+		"buttons": [
+			{ "label": "About Me", "link": "/about#base", "variant": "destructive" },
+			{ "label": "My Public Work", "link": "/work#base", "variant": "default" }
+		],
+		"secondaryButtons": [
+			{ "label": "Download CV", "link": "/CV.pdf", "variant": "outline"
+			},
+			{ "label": "LinkedIn", "link": "https://www.linkedin.com/in/ioan-crusoveanu/", "variant": "outline" },
+			{ "label": "Email", "link": "mailto:ionut.cruso@gmail.com", "variant": "outline" },
+			{ "label": "GitHub", "link": "https://github.com/ioancruso", "variant": "outline" }
+		]
+	},
+	"about": {
+		"skills": {
+			"languages": [
+				{ "language": "Romanian", "level": "Native" },
+				{ "language": "English", "level": "C1" },
+				{ "language": "German", "level": "Beginner" }
+			],
+			"technical": [
+				{ "name": "Next.js", "icon": "SiNextdotjs" },
+				{ "name": "React", "icon": "SiReact" },
+				{ "name": "CSS", "icon": "SiCss3" },
+				{ "name": "SASS", "icon": "SiSass" },
+				{ "name": "JavaScript", "icon": "SiJavascript" },
+				{ "name": "C++", "icon": "SiCplusplus" },
+				{ "name": "C", "icon": "SiC" },
+				{ "name": "GraphQL", "icon": "SiGraphql" },
+				{ "name": "NoSQL", "icon": "SiMongodb" },
+				{ "name": "PostgreSQL", "icon": "SiPostgresql" },
+				{ "name": "MySQL", "icon": "SiMysql" },
+				{ "name": "Supabase", "icon": "SupabaseIcon" },
+				{ "name": "TypeScript", "icon": "SiTypescript" },
+				{ "name": "REST API", "icon": "SiPostman" },
+				{ "name": "Tailwind CSS", "icon": "SiTailwindcss" },
+				{ "name": "Bootstrap", "icon": "SiBootstrap" },
+				{ "name": "HTML", "icon": "SiHtml5" }
+			],
+			"soft": [
+				{ "name": "Effective Communication", "icon": "FiMessageCircle" },
+				{ "name": "Patience", "icon": "FiClock" },
+				{ "name": "Empathy", "icon": "FiHeart" },
+				{ "name": "Teamwork", "icon": "FiUsers" },
+				{ "name": "Adaptability", "icon": "FiRefreshCw" },
+				{ "name": "Creativity", "icon": "FiEdit3" },
+				{ "name": "Conflict Resolution", "icon": "FiUser" },
+				{ "name": "Leadership", "icon": "FiUsers" },
+				{ "name": "Time Management", "icon": "FiClock" },
+				{ "name": "Active Listening", "icon": "FiVolume2" },
+				{ "name": "Attention to Details", "icon": "FiSearch" }
+			]
+		},
+		"experiences": [
+			{
+				"title": "Web Developer",
+				"company": "Freelancer",
+				"date": "July 2023 – Present",
+				"description": [
+					"Built web apps and landing pages using Next.js, including the web app dictionarurban.ro - a responsive platform for slang terms used by tens of thousands monthly.",
+					"Developed robust backends with Supabase for authentication, admin dashboards, and real-time data handling.",
+					"Focused on improving SEO through optimized metadata, structured data, and performance enhancements."
+				]
+
+			},
+			{
+				"title": "Content Writer and Digital Presence Specialist",
+				"company": "quidest.ro",
+				"date": "May 2019 – March 2022",
+				"description": [
+					"Crafted engaging history articles tailored to the audience.",
+					"Managed SEO strategies to secure top search rankings.",
+					"Oversaw social media and digital presence initiatives."
+				]
+			}
+		],
+		"education": [
+			{ "degree": "Master's in Applied Informatics", "institution": "Technical University of Cluj-Napoca", "date": "Sep 2024 – Present" },
+			{ "degree": "Web Development Course", "institution": "itschool.ro", "date": "Dec 2022 – June 2023" },
+			{ "degree": "Bachelor's in Contemporary History", "institution": "Babes-Bolyai University of Cluj-Napoca", "date": "Oct 2019 – Jul 2022" }
+		],
+		"hobbies": [
+			{ "name": "Football", "icon": "FaFutbol" },
+			{ "name": "Tennis", "icon": "FaTableTennis" },
+			{ "name": "Reading", "icon": "FaBook" },
+			{ "name": "Gaming", "icon": "FaGamepad" },
+			{ "name": "History", "icon": "FaLandmark" }
+		]
+	},
+	"publicWork": {
+		"projects": [
+			{
+				"title": "dictionarurban.ro",
+				"description": [
+					"Developed a responsive dictionary platform with Supabase for authentication and real-time data handling.",
+					"Designed an admin dashboard for seamless content and user management.",
+					"Implemented SEO best practices, including optimized metadata and structured data, achieving a perfect Core Web Vitals score."
+				],
+				"link": "https://dictionarurban.ro",
+				"github": null,
+				"key": "dictionary",
+				"images": [
+					"/projects/dictionar/main.png",
+					"/projects/dictionar/dashboard.png",
+					"/projects/dictionar/add.png",
+					"/projects/dictionar/login.png"
+				],
+				"technologies": {
+					"stack": [
+						"Next.js",
+						"React",
+						"JavaScript",
+						"HTML",
+						"SASS",
+						"Supabase"
+					],
+					"icons": [
+						"SiNextdotjs",
+						"SiReact",
+						"SiJavascript",
+						"SiHtml5",
+						"SiSass",
+						"SupabaseIcon"
+					]
+				}
+			},
+			{
+				"title": "quidest.ro",
+				"description": [
+					"Built a high-performance blog platform using Next.js with a headless WordPress backend.",
+					"Integrated GraphQL for efficient content querying and custom SASS styling for a modern UI.",
+					"Optimized SEO with tailored metadata and internal linking, achieving a perfect Core Web Vitals score."
+				],
+				"link": "https://quidest.ro",
+				"github": null,
+				"key": "blog",
+				"images": [
+					"/projects/blog/main.png",
+					"/projects/blog/article.png",
+					"/projects/blog/author.png",
+					"/projects/blog/category.png"
+				],
+				"technologies": {
+					"stack": [
+						"Next.js",
+						"React",
+						"JavaScript",
+						"WordPress",
+						"HTML",
+						"SASS",
+						"GraphQL"
+					],
+					"icons": [
+						"SiNextdotjs",
+						"SiReact",
+						"SiJavascript",
+						"SiWordpress",
+						"SiHtml5",
+						"SiSass",
+						"SiGraphql"
+					]
+				}
+			}
+		]
+	},
+	"sidebar": {
+		"items": [
+			{ "title": "Education", "url": "/about/education" },
+			{ "title": "Experience", "url": "/about/experience" },
+			{ "title": "Skills", "url": "/about/skills" },
+			{ "title": "Hobbies", "url": "/about/hobbies" }
+		],
+		"connect": [
+			{ "title": "Download CV", "url": "/CV.pdf" },
+			{ "title": "Email", "url": "mailto:ionut.cruso@gmail.com" },
+			{ "title": "GitHub", "url": "https://github.com/ioancruso" },
+			{ "title": "Linkedin", "url": "https://www.linkedin.com/in/ioan-crusoveanu/" }
+		]
+	}
+}

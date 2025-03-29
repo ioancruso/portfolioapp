@@ -1,0 +1,38 @@
+.wrapper {
+	display: grid;
+	place-items: start;
+	border-end-start-radius: 0.4em;
+	box-sizing: border-box;
+	padding: 0.4em;
+	margin-block-end: 2vh;
+	margin-inline-start: 20px;
+}
+.switch {
+	width: 3.3em;
+	height: 1.8em;
+	display: flex;
+	border-radius: 50px;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	padding-block: 0.8em;
+	box-sizing: border-box;
+	border: 1.5px solid var(--fourth-color);
+	box-shadow: 0 0 0.3em var(--box-shadow-color);
+	background-color: var(--primary-color);
+}
+.handle {
+	width: 1.4em;
+	height: 1.4em;
+	background-color: var(--third-color);
+	border: 1px solid var(--fourth-color);
+	border-radius: 40px;
+	box-sizing: border-box;
+	&[data-ison="light"] {
+		margin-inline-start: 2px;
+	}
+
+	&[data-ison="dark"] {
+		margin-inline-end: 2px;
+	}
+}

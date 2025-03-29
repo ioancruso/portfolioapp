@@ -1,0 +1,22 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" >
+
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" fill="#000000">
+    <style>
+        path {
+            fill: #fff;
+        }
+        @media (prefers-color-scheme: light) {
+            path {
+                fill: #000;
+            }
+        }
+        
+    </style>
+    
+    <g stroke-width="0"/>
+    <g stroke-linecap="round" stroke-linejoin="round"/>
+    <g>
+        <path d="M32 2C15.432 2 2 15.431 2 32c0 16.569 13.432 30 30 30s30-13.432 30-30C62 15.431 48.568 2 32 2m3.012 44.508h-6.023V17.492h6.023v29.016" fill="#000000"/>
+    </g>
+</svg>
