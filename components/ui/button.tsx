@@ -1,25 +1,23 @@
 import * as React from "react";
-
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
-
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-	"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+	"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 transition-transform duration-200 transform",
 	{
 		variants: {
 			variant: {
 				default:
-					"bg-button-default text-button-default-text hover:bg-button-default-hover border border-current shadow-md hover:shadow-lg",
+					"bg-button-default text-button-default-text hover:bg-button-default-hover border border-current shadow-md hover:shadow-lg hover:scale-105",
 				destructive:
-					"bg-button-destructive text-button-destructive-text hover:bg-button-destructive-hover shadow-md hover:shadow-lg border border-current",
+					"bg-button-destructive text-button-destructive-text hover:bg-button-destructive-hover shadow-md hover:shadow-lg border border-current hover:scale-105",
 				outline:
-					"bg-button-outline border border-input shadow-sm hover:shadow-md hover:bg-secondary hover:text-accent-foreground",
+					"bg-button-outline border border-input shadow-sm hover:shadow-md hover:bg-secondary hover:text-accent-foreground hover:scale-105",
 				secondary:
-					"bg-secondary text-button shadow-sm hover:shadow-md hover:bg-secondary/80",
-				ghost: "hover:bg-accent hover:text-accent-foreground shadow-none",
-				link: "text-primary underline-offset-4 hover:underline shadow-none",
+					"bg-secondary text-button shadow-sm hover:shadow-md hover:bg-secondary/80 hover:scale-105",
+				ghost: "hover:bg-accent hover:text-accent-foreground shadow-none hover:scale-105",
+				link: "text-primary underline-offset-4 hover:underline shadow-none hover:scale-105",
 			},
 			size: {
 				default: "h-9 px-5 py-2",

@@ -1,8 +1,9 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+
 import { useEffect, useCallback, useRef } from "react";
 import { ChevronUp, ChevronDown, CircleDot, Circle } from "lucide-react";
-import { useRouter } from "next/navigation";
 
 type ArrowButtonProps = {
 	direction: "up" | "down";
@@ -64,31 +65,46 @@ function VerticalStepper({
 	);
 }
 
+type StepperControlsProps = {
+	currentSection: string;
+	steps?: string[];
+};
+
 export function StepperControls({
 	currentSection,
-}: {
-	currentSection: string;
-}) {
+	steps = ["about", "education", "experience", "skills", "hobbies"],
+}: StepperControlsProps) {
 	const router = useRouter();
-	const sections = ["education", "experience", "skills", "hobbies"];
-	const activeIndex = sections.indexOf(currentSection);
+	const activeIndex = steps.indexOf(currentSection);
 	const isScrollingRef = useRef(false);
 	const touchStartY = useRef<number | null>(null);
 
+	const navigateToStep = useCallback(
+		(index: number) => {
+			const step = steps[index];
+			if (step === "about") {
+				router.push("/about");
+			} else {
+				router.push(`/about/${step}`);
+			}
+		},
+		[router, steps],
+	);
+
 	const goUp = useCallback(() => {
 		if (activeIndex > 0) {
-			router.push(`/about/${sections[activeIndex - 1]}`);
+			navigateToStep(activeIndex - 1);
 		}
-	}, [activeIndex, router, sections]);
+	}, [activeIndex, navigateToStep]);
 
 	const goDown = useCallback(() => {
-		if (activeIndex < sections.length - 1) {
-			router.push(`/about/${sections[activeIndex + 1]}`);
+		if (activeIndex < steps.length - 1) {
+			navigateToStep(activeIndex + 1);
 		}
-	}, [activeIndex, router, sections]);
+	}, [activeIndex, navigateToStep, steps.length]);
 
 	const handleStepClick = (index: number) => {
-		router.push(`/about/${sections[index]}`);
+		navigateToStep(index);
 	};
 
 	useEffect(() => {
@@ -156,14 +172,14 @@ export function StepperControls({
 				disabled={activeIndex === 0}
 			/>
 			<VerticalStepper
-				steps={sections}
+				steps={steps}
 				currentIndex={activeIndex}
 				onStepClick={handleStepClick}
 			/>
 			<ArrowButton
 				direction="down"
 				onClick={goDown}
-				disabled={activeIndex === sections.length - 1}
+				disabled={activeIndex === steps.length - 1}
 			/>
 		</div>
 	);

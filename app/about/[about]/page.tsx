@@ -1,10 +1,11 @@
-import React from "react";
 import { redirect } from "next/navigation";
-import data from "@/data/data.json";
+
 import { Separator } from "@/components/ui/separator";
 import { getIcon } from "@/hooks/getIcon";
 import { StepperControls } from "@/components/stepper";
 import { AnimatedSection } from "@/components/AnimatedSection";
+
+import data from "@/data/data.json";
 
 export async function generateMetadata({
 	params,
@@ -202,7 +203,16 @@ export default async function Home({ params }: { params: { about?: string } }) {
 			<div className="relative h-[94vh] flex items-center justify-center">
 				{content}
 			</div>
-			<StepperControls currentSection={section} />
+			<StepperControls
+				currentSection={section}
+				steps={[
+					"about",
+					"education",
+					"experience",
+					"skills",
+					"hobbies",
+				]}
+			/>
 		</div>
 	);
 }
