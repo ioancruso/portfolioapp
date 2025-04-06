@@ -1,6 +1,6 @@
 {
 	"home": {
-		"title": "Hello and Welcome",
+		"title": "Hi!",
 		"description": "I’m Crușoveanu Ioan, a web developer passionate for programming and its limitless possibilities. Whether I’m solving problems or creating intuitive user interfaces, I’m driven by curiosity and a desire to grow. Take a look around to get to know me and my work better.",
 		"buttons": [
 			{ "label": "About Me", "link": "/about#base", "variant": "destructive" },

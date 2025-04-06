@@ -11,7 +11,7 @@ export default function HomePage() {
 	const { title, description, buttons, secondaryButtons } = data.home;
 
 	return (
-		<AnimatedSection className="flex flex-col items-center bg-primary text-text px-4">
+		<AnimatedSection className="flex flex-col items-center bg-primary text-text px-4 py-10">
 			<h1 className="text-3xl font-extrabold mb-4 text-highlight text-center tracking-wide">
 				{title}
 			</h1>
