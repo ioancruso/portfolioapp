@@ -11,6 +11,7 @@ export interface Experience {
 	company: string;
 	date: string;
 	description: string[];
+	location: string;
 }
 
 export interface Skill {

@@ -56,15 +56,26 @@
 		},
 		"experiences": [
 			{
+				"title": "Frontend Developer",
+				"company": "Brandware Media",
+				"date": "April 2025 – Present",
+				"description": [
+					"Collaborated with design and product teams to create responsive and engaging user interfaces using modern JavaScript frameworks.",
+					"Implemented and maintained UI components with React and Next.js, ensuring cross-browser compatibility and optimal performance.",
+					"Optimized performance through code reviews, monitoring, and implementation of best practices."
+				],
+				"location": "Remote"
+			},
+			{
 				"title": "Web Developer",
 				"company": "Freelancer",
-				"date": "July 2023 – Present",
+				"date": "July 2023 – April 2025",
 				"description": [
 					"Built web apps and landing pages using Next.js, including the web app dictionarurban.ro - a responsive platform for slang terms used by tens of thousands monthly.",
 					"Developed robust backends with Supabase for authentication, admin dashboards, and real-time data handling.",
 					"Focused on improving SEO through optimized metadata, structured data, and performance enhancements."
-				]
-
+				],
+				"location": "Remote"
 			},
 			{
 				"title": "Content Writer and Digital Presence Specialist",
@@ -74,7 +85,8 @@
 					"Crafted engaging history articles tailored to the audience.",
 					"Managed SEO strategies to secure top search rankings.",
 					"Oversaw social media and digital presence initiatives."
-				]
+				],
+				"location": "Remote"
 			}
 		],
 		"education": [

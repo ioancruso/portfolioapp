@@ -82,8 +82,11 @@ export default async function Home({ params }: { params: { about?: string } }) {
 								className="p-3 sm:p-4 rounded-lg bg-secondary text-secondary-foreground shadow border-l-4 border-accent w-full sm:w-[90%] lg:w-2/3"
 							>
 								<p className="text-xs text-muted">{exp.date}</p>
-								<h3 className="text-base sm:text-lg font-semibold text-highlight">
+								<h3 className="text-base sm:text-lg font-semibold text-highlight flex items-center">
 									{exp.title}
+									<span className="ml-3 inline-block px-2 py-1 bg-accent text-accent-foreground text-xs rounded">
+										{exp.location}
+									</span>
 								</h3>
 								<p className="text-xs text-muted italic">
 									{exp.company}
